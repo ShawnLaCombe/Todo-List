@@ -4,6 +4,6 @@
   </span>
     <%= link_to fa_icon("pencil", text:'Edit'), edit_user_task_path(user_task), remote: true %>
   <span class="pull-right">
-    <%= user_task.due %>
+    <%= user_task.due.stamp("March 1, 1999") %>
   </span>
 </div>

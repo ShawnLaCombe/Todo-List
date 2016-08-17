@@ -26,6 +26,8 @@ gem 'bootstrap-datepicker-rails'
 
 gem 'font-awesome-rails'
 
+gem 'stamp'
+
 group :development, :test do
 
   gem 'byebug'
