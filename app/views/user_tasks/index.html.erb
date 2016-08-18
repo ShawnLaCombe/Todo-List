@@ -6,6 +6,9 @@
   <button class= "btn btn-sm btn-default add-task">
     <%= fa_icon "plus" %> Add Task
   </button>
+  <% if @user_tasks.empty?%>
+  <%= "Add a new task?" %>
+<% end %>
 <% end %>
 
 <div id ="task-form"></div>

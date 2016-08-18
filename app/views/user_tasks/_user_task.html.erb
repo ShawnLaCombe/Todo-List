@@ -1,9 +1,17 @@
 <div class="well">
   <span class="task">
     <%= link_to user_task.description, user_task, remote: true, method: :delete, data: {confirm: 'Are You Sure?'} %>
+     <% if @user_tasks == 0 %>
+      <%= "Add a new task" %>
+    <% end %>
   </span>
     <%= link_to fa_icon("pencil", text:'Edit'), edit_user_task_path(user_task), remote: true %>
   <span class="pull-right">
-    <%= user_task.due.stamp("March 1, 1999") %>
+    <%= user_task.due %>
   </span>
 </div>
+
+
+
+<!-- .stamp("March 1, 1999") -->
+

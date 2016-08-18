@@ -28,6 +28,10 @@ gem 'font-awesome-rails'
 
 gem 'stamp'
 
+gem 'omniauth-facebook'
+
+gem 'figaro'
+
 group :development, :test do
 
   gem 'byebug'
